@@ -1,14 +1,15 @@
-class Program
-{
-    static void Main(string[] args)
-    {
-        job myJob = new job();
-        myJob._company = "Tech Solutions Inc.";
-        myJob._jobTitle = "Software Engineer";
-        myJob._startDate = "January 2020";
-        myJob._endDate = "Present";
-        myJob._jobDescription = "Developing and maintaining software applications.";
+using System;
 
-        myJob.Display();
+public class Job
+{
+    public string _jobTitle;
+    public string _company;
+    public int _startYear;
+    public int _endYear;
+
+    public void Display()
+    {
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
+
